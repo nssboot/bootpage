@@ -1,26 +1,48 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-<meta charset="utf-8" />  
-<title>My Blog</title>  
-<!-- styles --> 
-<style>
+<?php require 'home.html' ;?>
+
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<style>
 	body {
 	    background-color: #d0e4fe;
 	}
 
-	
 	p {
 	    font-family: "Times New Roman";
 	    font-size: 20px;
 	}
 
-	#banner {
+	.round img {
+		display: block;
+		min-width: 100%;
+		min-height: 100%;
+		align:middle;
+		float:center;
+	}
+
+	.leftimage {
+		width:70%;
+		display: inline-block;
+		float: center;
+	}
+	.righttext { 
+		height: auto;
+		width: 30%;
+		display: inline;
+	}
+
+	#header {
     background-color:#000099;
     color:white;
     text-align:center;
     padding:5px;
-	}
+    }
 	
 	#section {
     width:1500px;
@@ -32,84 +54,104 @@
     color:white;
     clear:both;
     text-align:center;
-    padding:5px;	 	 
-	}
+    padding:2px;
+
+  }
+
+  .myStyle input[type="text"] {
+   height: 11px;
+   font-size: 8px;
+   line-height: 11px;
+  }	 	 
+}
 
 	</style>
-
-</head>  
-<body>  
-
-
-<div id="container">  
-
-<header role="banner">  
-<h1><a href="/">Raj Sarma</a></h1> 
-</header>  
-
-<nav>  
-<ul>  <!-- nav items -->
-<li>
-Home Page (work in progress)
-<li>
-More About Me
-</ul>  
+	</head>
+	<body>
+		
+<nav class="navbar navbar-default navbar-inverse" style="text-align:center">
+  <div class="container-fluid">
+    <div class="navbar-header" style="text-align:center">
+      <a class="navbar-brand" href="#" style="text-align:center"></a>
+        <ul class="nav navbar-nav">          
+          <li><a href="home.html">Home</a></li>
+          <li class="active"><a href="#" class="active">Blog</a></li>
+          <li><a href="#">My Portfolio</a></li>       
+        </ul>
+      </div>    
+    </div>    
+  </div>
 </nav> 
 
-<div id="blog" class="hidden">  
+  <footer>
+    <div class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group" style="text-align:center"></div>
+          <button type="default" class="btn btn-default"><h7>Stack Overflow: nssboot</h7></button>
+          <button type="default" class="btn btn-default"><h7>Twitter:  @RajSarmaTweet<h7></button>
+          <button type="default" class="btn btn-default"><h7>https://www.linkedin.com/in/nagarajsarma</h7></button>
+          <button type="default" class="btn btn-default"><h7> 609-937-2930</h7></button>
+          <button type="default" class="btn btn-default"><h7> nagarajsarma@gmail.com</h7></button>
+      </form> 
+    </div>
+  </footer>	
+
+  <div class="col-xs-1">  
+    <img src="nss-photo-professional-1.jpg" width="60" height="90" align="middle"/>
+  </div>
+  <div class="col-xs-11">
+  
+		<div id="blog" class="hidden">  
 <!-- blog dropdown --> 
 </div><!-- blog -->  
 
 <article>  
 <header>  
-<h1><a href="">More About Me</a></h1>  
-With over 25 years of work-experience in the USA and across the globe, I bring an unique perspective on global business, cultural expectations, and practices.  While I have largely focused on the Telecommunications and the Media & Entertainment industries I have also, within the USA, worked on projects related to Financial and Pharmaceutical companies.  
+<h3><a href="">Blogging Me</a></h3>  
+Rather than 'formally' constructed statements on my experience, my views below reflect lessons learnt from my work experience thus far in my career.
 <p>
-My views below reflect my experience and lessons learnt in my career thus far.
+<br>
+With over 25 years of work-experience in the USA and across the globe, I bring an unique perspective on global business, cultural expectations, and practices.  I have largely focused my career on the Telecommunications and the Media & Entertainment industries.  
 <p>
-My areas of expertise include Customer Experience and Digital Transformation.  As Senior Vice President of a Media company, I set-up their Customer Experience, Digital Transformation, and Loyalty department and teams.  Execution of these functions and frameworks are solely driven by customer-centricity.  
+My areas of expertise have culminated in the functional areas of Customer Experience and Digital Transformation - but it is expertise culled from several functional areas.  In my last corporate role as Senior Vice President of a TV Media company, I set-up their Customer Experience and Loyalty department, and drove their Digital Transformation resulting in reduced customer churn, lower cost-to-serve, increased customer loyalty, and consequent revenues and ARPU.  These functions and frameworks are based on a rich pallette of customer-centricity.  
 <p>
-Given the diversity of market segments that businesses pursue, the competitive landscape, and emerging technology trends compel businesses to reach out to customers via omni channels 24x7.   Unforgiving customers rightfully demand services anywhere, anytime, and via any channel.  
+Businesses are transforming at furious rates to cope with constant market change. Unforgiving customers rightfully demand services anywhere, anytime forcing businesses to reach out to their customers through all available means. Enabling such omni channels 24x7 for a sustainable business consequently implies efficient coordination of multiple disciplines, teams, and communication strategies to optimize revenue streams for the company.     
 <p>
-My experience in reaching out to customers via the Web, Mobile, TV, Print Media, Direct Mail, Call Centers, Retail channels, 3rd party Distribution channels, Direct Sales, etc. have made it very clear to me that customer-centricity is best guided by a Customer Bill of Rights.  The Bill of Rights will ensure that customers are always borne in mind when making business decisions.
+My experience in reaching out to customers via the Web, Mobile, TV, Print Media, Direct Mail, Call Centers, Retail channels, 3rd party Distribution channels, Direct Sales, etc. have made it very clear to me that customer-centricity is best guided by a Customer Bill of Rights - a Bill of Rights that will ensure that customers are always borne in mind when making business decisions.
 <p>
-Businesses need to understand a customer's journey and lifecycle so that they allocate appropriate resources and design experiences in the customer's journey and thereby deliver value to the customer.  The purpose of focusing on the customer's experience is to ensure the loyalty of the customer to the brand.   We must remember that competition is a mere proverbial click away!  
+It is critical in today's markets for a business to  understand their customer's journey and lifecycle through their business.  This will allow them to allocate appropriate resources and design experiences for their customers through their journey, with the objective of  delivering value to the customer.  Only a value-laden experience will enhance the loyalty of the customer.    We must remember that competition is a mere proverbial click away!  
 <p>
-Given the multiple channels of interaction with the customer, the objective of Digital Transformation is to increase the percentage of customer interactions via Digital channels.  This percentage measure indicates the penetration of the digital channels for a business, and given the comparatively low unit-costs of interaction incurred by these channels, also the success of the business and its' agility in meeting customer expectations.   
+The bottom-line objective for Digital Transformation is to increase the percentage of customer interactions via Digital channels.  This percentage measure indicates the penetration of the digital channels for a business, and given the comparatively low unit-costs of interaction incurred by these channels, also the success of the business and its' agility in meeting customer expectations.   
 <p>
-None of the above means that a business must not focus on its' bottom-line profits!  Au contraire, the probability of a business' profits and longevity today may actually depend on the customer experiences delivered.   Technologies deployed to enhance customer experiences can often be leveraged to streamline business processes and reduce costs to serve customers.  
+None of the above means that a business must not focus on its' bottom-line profits!  Au contraire, the probability of a business' profits and longevity today may actually depend on the customer experiences delivered through digital media and assets.   Technologies deployed to enhance customer experiences can often be leveraged to streamline business processes and reduce costs to serve customers.  
 <p>
-Transformation may therefore mean leveraging new digital technologies for (a) innovation to monetize new products and services targeting the customer, or (b) enhancement / modification of current products and services, or (c) streamlining of cost factors.
+Digital Transformation may mean having to leverage new digital technologies for (a) innovation to monetize new products and services targeting the customer, or (b) enhancement / modification of current products and services, or (c) streamlining of cost factors.
 <p>
-All of the above means that there are a whole sleuth of data to be reckoned with and analyzed to ensure that the right product or service is provided to the customer at the right time and in the right place via the right channel.  A lot of this has to be done in anticipation of customer behavior and therefore competency in predictive analytics is a necessary investment.   
+All of the above means that there are a whole sleuth of data to be reckoned with and analyzed to ensure that the right product or service is provided to the customer at the right time and in the right place via the right channel.  Significant aspects of this strategy may involve anticipation of customer behavior and a competency in predictive analytics as a necessary investment.   
 <p>
-Having been a key member on the Governance Board for Big Data for the Media company, I know that the challenges for setting up such an infrastructure is no mean task.  The good news though, is that businesses can start small being driven by priorites dictated by their business.  Clearly, the upside potential and rewards for these investments "are worth every penny invested".   Measured investment risk is inevitable in markets today, if businesses need to be transformed to meet customer expectations.  
+Having been a key member on the Governance Board for Big Data for the Media company, I know that the challenges for setting up such an infrastructure is no mean task.  The good news though, is that businesses can start small being driven by priorites dictated by their business.  Clearly, the upside potential and rewards for these investments "are worth every penny invested".   Measured investment risk is inevitable in markets today, if businesses need to support an investment portfolio to  meet constantly evolving customer expectations.  
 <p>
-Professionals today almost need to be entrepreneurial in managing their careers.  It is all about the customer and the ability to communicate value to them. It is also about the ability to cut through grime and slime to make things work, as best exemplified by many of the digital start-ups of the last two decades.     I have been fortunate enough to have been biten by the entrepreneurial bug twice when I ventured out to start new companies.   Unfortunately though, I did not succeed - and that may be a topic to discuss in my next blog.  Having said that, the lessons from these experiences have been humbling and invaluable in terms of being prepared for my next effort - whether as an individual or as an entrepreneurial contributor for my next employer.   It is further my belief that the Bootcamp offers me cutting-edge skills to create the kind of tools, channels, and media to deliver what the market is looking for. 
+Professionals today almost need to be entrepreneurial in managing their careers.  It is all about the customer and the ability to communicate value to them. It is also about the ability to cut through grime and slime to make things work, as best exemplified by many of the digital start-ups of the last two decades.     I have been fortunate enough to have been bitten by the entrepreneurial bug twice when I ventured out to start new companies.   Unfortunately, I did not succeed - but that may be a topic to discuss in my next blog.  Having said that, the lessons from these experiences have been humbling and invaluable in terms of being prepared for my next effort - whether as an individual or as an entrepreneurial contributor for my next employer.   It is immensely helpful to be equipped with cutting-edge technology and other skills to be able to create the kind of products and services that enthrall your customers.  
 <p>
 In meeting and executing on the above business expectations, one needs to be savvy about his or her professional, personal, and social experiences and outlook.  There are no excuses.
 <p> 
 On my part I look for role-models, like the 3 below from whom I draw inspiration.  
 <br>
-<h3 style="color:#663300;text-align:left"> Drawing inspiration for professional, personal, and social perspectives from these heroes....</h3>
+<h5 style="color:#663300;text-align:left"> Drawing inspiration for professional, personal, and social perspectives from these heroes....</h5>
 
-			<h3 style="color:#663300;text-indent:80px"> Steve Jobs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nick Vujicic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abdul Sattar</h3>	
+      <h4 style="color:#663300;text-indent:80px"> Steve Jobs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nick Vujicic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abdul Sattar</h4> 
 
 
-			< <style="title: Steve Jobs">  <iframe width="220" height="185"  src="https://www.youtube.com/embed/x-itksd2d8E" frameborder="0" allowfullscreen></iframe>
-			<iframe <iframe width="200" height="185" src="" frameborder="0" allowfullscreen></iframe>
-			<iframe width="200" height="185" src="https://www.youtube.com/embed/x_DBcA-A9dk" frameborder="0" allowfullscreen></iframe>	
-			<iframe <iframe width="200" height="185" src="" frameborder="0" allowfullscreen></iframe>
-			<iframe <iframe width="200" height="185" src="https://www.youtube.com/embed/PJodHQRNEnE" frameborder="0" allowfullscreen></iframe>
-		<p>
-		</p>
-
-		<div id="footer">
-			<h5>Twitter:  @RajSarmaTweet<h5>	
-		</div>
-			 
-		<p>
-		<p>
+      < <style="title: Steve Jobs">  <iframe width="220" height="185"  src="https://www.youtube.com/embed/x-itksd2d8E" frameborder="0" allowfullscreen></iframe>
+      <iframe <iframe width="200" height="185" src="" frameborder="0" allowfullscreen></iframe>
+      <iframe width="200" height="185" src="https://www.youtube.com/embed/x_DBcA-A9dk" frameborder="0" allowfullscreen></iframe>  
+      <iframe <iframe width="200" height="185" src="" frameborder="0" allowfullscreen></iframe>
+      <iframe <iframe width="200" height="185" src="https://www.youtube.com/embed/PJodHQRNEnE" frameborder="0" allowfullscreen></iframe>
+    <p>
+    </p>      
+    <p>
+    <p>
 
 
 <div class="postmeta">  
@@ -123,14 +165,10 @@ On my part I look for role-models, like the 3 below from whom I draw inspiration
 </header>  
 <!-- content -->  
 
-<aside class="comments" id="comments">  
-<!-- comments --> 
-</aside><!-- comments -->  
-<br>
-<!--This section comes after the date in the printout and after '0 comments'--?
-</article>  
 
-</div><!-- container -->  
-<!-- scripts -->  
-</body>  
-</html>
+	<body>
+<html>
+
+
+
+

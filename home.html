@@ -1,11 +1,14 @@
+<?php require 'home.html' ;?>
+
 <!doctype html>
 <html>
 <head>
-	<style>
-  a {
-    color: hotpink;
 
-  }
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<style>
 	body {
 	    background-color: #d0e4fe;
 	}
@@ -13,14 +16,6 @@
 	p {
 	    font-family: "Times New Roman";
 	    font-size: 20px;
-	}
-
-	.round {
-		border-radius: 50%;
-		overflow: hidden;
-		width: 150px;
-		height: 150px;
-		align:middle;
 	}
 
 	.round img {
@@ -59,31 +54,63 @@
     color:white;
     clear:both;
     text-align:center;
-    padding:2px;	 	 
-	}
+    padding:2px;
+
+  }
+
+  .myStyle input[type="text"] {
+   height: 11px;
+   font-size: 8px;
+   line-height: 11px;
+  }	 	 
+}
 
 	</style>
 	</head>
 	<body>
 		
-		<div id="header">
-		<h3> Raj Sarma's Portfolio Page</h3>
-		<h7> nagarajsarma@gmail.com</h7>
-		<br>
-		<h7> 609-937-2930</h7>
-			<div class="round">
-				<img src="nss-photo-professional-1.jpg" width="120" height="180" align="middle"/>
-				<h3></h3>
-			</div>
-		</div>
+<nav class="navbar navbar-default navbar-inverse" style="text-align:center">
+  <div class="container-fluid">
+    <div class="navbar-header" style="text-align:center">
+      <a class="navbar-brand" href="#"></a>
+        </div>
+          <div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="active">Home</a></li>
+              <li><a href="blog-1.html">Blog</a></li> 
+              <li><a href="#">My Portfolio</a></li>
+            </ul>
+          </div>
+    <!--/div-->    
+  </div>
+</nav> 
 
-		<table border="0">
-  		<tr>
-  			<th>Education:</th>
-  			<td></td>
-  			<td>&nbsp &nbsp Rutgers University</td>
-    		<td>-&nbsp &nbsp &nbsp &nbsp </td>
-    		<td>Web Development Bootcamp</td>
+  <footer>
+    <div class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group" style="text-align:center"></div>
+          <button type="default" class="btn btn-default"><h7>Stack Overflow: nssboot</h7></button>
+          <button type="default" class="btn btn-default"><h7>Twitter:  @RajSarmaTweet<h7></button>
+          <button type="default" class="btn btn-default"><h7>https://www.linkedin.com/in/nagarajsarma</h7></button>
+          <button type="default" class="btn btn-default"><h7> 609-937-2930</h7></button>
+          <button type="default" class="btn btn-default"><h7> nagarajsarma@gmail.com</h7></button>
+      </form> 
+    </div>
+  </footer>	
+
+  <div class="col-xs-1">  
+    <img src="nss-photo-professional-1.jpg" width="60" height="90" align="middle"/>
+  </div>
+  <div class="col-xs-11">
+		<table border="0" "text-align:left">
+  		<tr>        
+  			<th>&nbsp Education:</th>
+    			<td></td>
+    			<td>&nbsp &nbsp Rutgers University</td>
+      		<td>-&nbsp &nbsp &nbsp &nbsp </td>
+      		<td>Web Development</td> 
+          <th></th>
     	</tr>
   		<tr>
     		<td></td>
@@ -112,21 +139,19 @@
 		<table border="0">
 		<tr>
 		<tr>
-  			<th>Career</th>
+  			<th>&nbsp Career</th>
   			<td></td>
     	</tr>
-    		<th>Objectives:</th>
+    		<th>&nbsp Objectives:</th>
     		<td></td>
     		<td>&nbsp Seeking an entrepreneurial career in Digital Transformation to bring experiential technology and innovations to market</td>
     		<td></td>
    		</tr>
-  		</table>
-		
-		<br>
-		<p>
+  		</table>		
+		<br>		
 		<table border="0">
   		<tr>
-  			<th>Skills: &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+  			<th>&nbsp Skills: &nbsp &nbsp &nbsp &nbsp &nbsp</th>
   			<td>&nbsp Functional</td>
   			<td>- Business Development, Marketing Operations, & Technology</td>
     		<td></td>
@@ -152,18 +177,22 @@
   		</tr> 
 
 		</table>
+  </div>
 
 		<br>
 		<p>
 
+  <div class="col-xs-1"></div>
+
+  <div class="col-xs-11">
 		<table border="0">
   		<tr>
-  			<th>Work</th>
+  			<th>&nbsp Work</th>
   			<td></td>
     	</tr>
     	<tr>
-    		<th>Experience:</th>
-    		<td>&nbsp Astro TV, Asia</td>
+    		<th>&nbsp Experience:</th>
+    		<td>&nbsp Astro TV, Asia, </td>
     		<td>Senior Vice President</td>
     	</tr>
 
@@ -297,48 +326,28 @@
 		
 		<table border="0">
   		<tr>
-  			<th>Independent</th>
+  			<th>&nbsp Independent</th>
   			<td></td>
     	</tr>
     	<tr>
-    		<th>Projects:</th>
+    		<th>&nbsp Projects:</th>
     		<td>&nbsp As CEO of a start-up, developed End-to-End market-place platform for E Commerce specific to Asian markets</td>
     		<td></td>
     	</tr>
     	</table>			
-		<p>
-		</p>
-		<br>
-
-		Click <a href="http://https://www.linkedin.com/in/nagarajsarma">here</a> for my LinkedIn page
-		<br>
-
-		For a little bit more about me, please <a href="http://https://www.linkedin.com/in/nagarajsarma" > click here</a> instead.
-		<br>
-
-
-		<h4>To get in touch with me, please provide your information below:<h4>		
+		<p></p>		
+		<h6> For a little bit more about me, please <a href="http://https://www.linkedin.com/in/nagarajsarma"> click here</a>  Click <a href="http://https://www.linkedin.com/in/nagarajsarma">here</a> for my LinkedIn page	</h6>			 
+   
+		<h6>To get in touch with me, please leave your contact information below:<h6>		
 		<form action="contact_form.asp" method="get">
-  			First name: <input type="text" name="fname"><br>
-  			Last name: <input type="text" name="lname"><br>
-  			Phone number: <input type="text" name="phone"><br>
-  			E Mail: <input type="text" name="email-id"><br>
-  			Date: <input type="text" name="date"><br>
-  			<input type="submit" value="Submit">
+  			&nbsp &nbsp First name: <input class="myStyle" type="text" size="40" name="fname"><br>
+  			&nbsp &nbsp Last name: <input class="myStyle" type="text" size="40" name="lname"><br>
+  			&nbsp &nbsp Phone number: <input class="myStyle" type="text" size="36" name="phone"><br>
+  			&nbsp &nbsp E Mail: <input class="myStyle" type="text" size="44" name="email-id"><br>
+  			&nbsp &nbsp Date: <input class="myStyle" type="text" name="date">&nbsp &nbsp<input type="submit" value="Submit">
 		</form>
 		<br>
-			
-		<div id="footer">
-			<h7>Stack Overflow: nssboot</h7>
-			<br>			
-			<h7>Twitter:  @RajSarmaTweet<h7>
-			<br>
-			<h7>https://www.linkedin.com/in/nagarajsarma</h7>	
-		</div>
-
-
-		<p>
-		<p>
+    </div>
 	<body>
 <html>
 
